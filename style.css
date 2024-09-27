@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    background: linear-gradient(135deg, #1b1b1b, #353535);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card {
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search input {
+    width: 75%;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.1),
+      inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .search button {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1),
+      -2px -2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  
+  .search button:hover {
+    transform: scale(1.1);
+  }
+  
+  .weather {
+    display: none;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .weather-icon {
+    width: 100px;
+  }
+  
+  .temp {
+    font-size: 70px;
+    margin: 10px 0;
+  }
+  
+  .city {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .col i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .error {
+    color: #ff6b6b;
+    display: none;
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card {
+      padding: 20px;
+    }
+  
+    .temp {
+      font-size: 50px;
+    }
+  
+    .city {
+      font-size: 24px;
+    }
+  
+    .col i {
+      font-size: 30px;
+    }
+  }
+  
